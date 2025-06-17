@@ -59,14 +59,11 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--primary-color);
 }
 
-.logo i {
-    margin-right: 10px;
-    font-size: 2rem;
+.logo img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-menu {
