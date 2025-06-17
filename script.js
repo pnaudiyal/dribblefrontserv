@@ -51,6 +51,59 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Modal Functions
+function openModal() {
+    document.getElementById('registrationModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('registrationModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById('registrationModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+
+// Close modal with escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
+
+// Close button functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.querySelector('.close');
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
+
+});
+
+
+// Google Maps Function
+function openGoogleMaps() {
+    const address = 'Dribble Klub, Aamwala,Dehradun Uttarakhand 248001'; // Replace with your actual address
+    const encodedAddress = encodeURIComponent(address);
+    const mapsURL = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+    window.open(mapsURL, '_blank');
+}
+
+// Contact WhatsApp Function
+function openContactWhatsApp() {
+    const phoneNumber = '+919900559606'; // Replace with your organization's WhatsApp number
+    const message = 'Hi! I would like to get in touch regarding DribbleKlub services. Please provide more information about your facilities and booking process.';
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+}
+
 // Team Registration Form
 const teamRegistrationForm = document.getElementById('teamRegistrationForm');
 if (teamRegistrationForm) {

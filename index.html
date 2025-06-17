@@ -7,6 +7,14 @@
     <title>TurfPro - Premium Sports Turf Booking</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+     integrity="sha512-Fo3rlrZj/k7ujTTXRNx0Qe+T1r3R91LbbPZzq++6FXN2uoy9WQOv1zCv6OSMFzFtP5c6lCOaHbn+3Ro6nImprw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
 </head>
 <body>
     <!-- Header Section -->
@@ -14,7 +22,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="attached_assets/logo_1750142238929.png" alt="DRIBBLE Logo">
+                    <img src="images/dribbleKlub_logo.jpeg" alt="DRIBBLE Logo">
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -28,7 +36,7 @@
                 <div class="hamburger">
                     <span></span>
                     <span></span>
-                    <span></span>
+                   
                 </div>
             </div>
         </nav>
@@ -36,10 +44,14 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <img src="images/turfUnderNightLight.jpeg" alt="Football Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Game ON. Teams In. Top the Charts</h1>
+                    
+                      <h1>Game On. Teams In.</h1> 
+                      <h1>Top the Charts.</h1>
+                      <h1>Fuel Your Skills at Our Football Academy</h1>
                     <p>Easily book turf, register your team, and compete to top the leaderboard.</p>
                     <div class="hero-buttons">
                         <button class="btn-primary" onclick="scrollToSection('register')">Register Team</button>
@@ -51,7 +63,9 @@
     </section>
 
     <!-- Team Registration & Leaderboard Section -->
+    <!-- Team Registration & Leaderboard Section -->
     <section id="register" class="registration-section">
+         <img src="images/football.jpeg" alt="Cricket Background" class="card-bg-image-main">
         <div class="container">
             <div class="section-header">
                 <h2>Join the Competition</h2>
@@ -67,10 +81,7 @@
                             <label for="teamName">Team Name</label>
                             <input type="text" id="teamName" name="teamName" required>
                         </div>
-                        <div class="form-group">
-                            <label for="captainName">Captain Name</label>
-                            <input type="text" id="captainName" name="captainName" required>
-                        </div>
+                      
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" required>
@@ -79,6 +90,7 @@
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
+
                         <div class="form-group">
                             <label for="sport">Sport</label>
                             <select id="sport" name="sport" required>
@@ -88,45 +100,76 @@
                                 <option value="pickleball">Pickleball</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="players">Number of Players</label>
-                            <input type="number" id="players" name="players" min="5" max="15" required>
-                        </div>
+                     
                         <button type="submit" class="btn-primary">Register Team</button>
                     </form>
                 </div>
 
                 <!-- Top Teams Leaderboard -->
                 <div class="leaderboard-preview">
-                    <h3>Top Teams</h3>
-                    <div class="leaderboard-list">
-                        <div class="team-rank">
-                            <span class="rank">1</span>
-                            <span class="team-name">Thunder Bolts</span>
-                            <span class="points">2850</span>
+                    <h3>Champions League</h3>
+                    <div class="podium-container">
+                        <!-- Second Place -->
+                        <div class="podium-position second">
+                            <div class="team-avatar">🔥</div>
+                            <div class="team-info">
+                                <h4>Fire Eagles</h4>
+                                <div class="team-stats">
+                                    <span class="wins">20W</span>
+                                    <span class="points">2720 pts</span>
+                                </div>
+                            </div>
+                            <div class="podium-rank">2</div>
                         </div>
-                        <div class="team-rank">
-                            <span class="rank">2</span>
-                            <span class="team-name">Fire Eagles</span>
-                            <span class="points">2720</span>
+                        
+                        <!-- First Place -->
+                        <div class="podium-position first">
+                            <div class="crown">👑</div>
+                            <div class="team-avatar champion">⚡</div>
+                            <div class="team-info">
+                                <h4>Thunder Bolts</h4>
+                                <div class="team-stats">
+                                    <span class="wins">24W</span>
+                                    <span class="points">2850 pts</span>
+                                </div>
+                            </div>
+                            <div class="podium-rank champion">1</div>
                         </div>
-                        <div class="team-rank">
-                            <span class="rank">3</span>
-                            <span class="team-name">Storm Riders</span>
-                            <span class="points">2650</span>
-                        </div>
-                        <div class="team-rank">
-                            <span class="rank">4</span>
-                            <span class="team-name">Royal Warriors</span>
-                            <span class="points">2580</span>
-                        </div>
-                        <div class="team-rank">
-                            <span class="rank">5</span>
-                            <span class="team-name">Speed Demons</span>
-                            <span class="points">2450</span>
+                        
+                        <!-- Third Place -->
+                        <div class="podium-position third">
+                            <div class="team-avatar">🌪️</div>
+                            <div class="team-info">
+                                <h4>Storm Riders</h4>
+                                <div class="team-stats">
+                                    <span class="wins">18W</span>
+                                    <span class="points">2650 pts</span>
+                                </div>
+                            </div>
+                            <div class="podium-rank">3</div>
                         </div>
                     </div>
-                    <button class="btn-secondary" onclick="window.location.href='leaderboard.html'">View Full Rankings</button>
+                    
+                    <!--<div class="ranking-list">
+                        <div class="rank-item">
+                            <span class="position">4</span>
+                            <span class="team-name">Royal Warriors</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                            <span class="points">2580</span>
+                        </div>
+                        <div class="rank-item">
+                            <span class="position">5</span>
+                            <span class="team-name">Speed Demons</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%"></div>
+                            </div>
+                            <span class="points">2450</span>
+                        </div>
+                    </div>-->
+                    
+                    <button class="btn-secondary" onclick="window.location.href='leaderboard.html'">View Full Championships</button>
                 </div>
             </div>
         </div>
@@ -138,12 +181,13 @@
     <section id="pricing" class="pricing-section">
         <div class="container">
             <div class="section-header">
-                <h2>Transparent Pricing</h2>
-                <p>Choose the perfect package for your team</p>
+                <h1>Choose the perfect package for your team</h1>
             </div>
             
             <div class="pricing-cards">
+                  <img src="images/football.jpeg" alt="Cricket Background" class="card-bg-image-main">
                 <div class="pricing-card">
+                    <img src="images/football.jpeg" alt="Football Background" class="card-bg-image">
                     <div class="card-header">
                         <h3>Full Ground</h3>
                         <div class="price">₹2,250<span>/hour</span></div>
@@ -160,11 +204,12 @@
                     </div>
                 </div>
 
-                <div class="pricing-card featured">
+                <div class="pricing-card">
+                    <img src="images/cricket.jpeg" alt="Cricket Background" class="card-bg-image">
                     <div class="card-header">
                         <h3>Half Ground</h3>
                         <div class="price">₹1,400<span>/hour</span></div>
-                        <div class="badge">Most Popular</div>
+                        
                     </div>
                     <div class="card-content">
                         <ul class="features">
@@ -179,6 +224,7 @@
                 </div>
 
                 <div class="pricing-card">
+                     <img src="images/pickleBallWithRacketInHand.jpeg" alt="Cricket Background" class="card-bg-image">
                     <div class="card-header">
                         <h3>Pickleball Court</h3>
                         <div class="price">₹900<span>/hour</span></div>
@@ -189,7 +235,7 @@
                             <li><i class="fas fa-check"></i> Rackets Available</li>
                             <li><i class="fas fa-check"></i> Scoreboards</li>
                             <li><i class="fas fa-check"></i> Changing Rooms</li>
-                            <li><i class="fas fa-check"></i> Refreshments</li>
+                             <li><i class="fas fa-check"></i> Parking Available</li>
                         </ul>
                         <button class="btn-primary">Book Now</button>
                     </div>
@@ -197,6 +243,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
@@ -209,13 +257,13 @@
             <div class="gallery-container">
                 <div class="gallery-scroll">
                     <div class="gallery-track">
-                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop" alt="Football Turf">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop" alt="Cricket Ground">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop" alt="Indoor Facility">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Sports Equipment">
-                        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=400&h=300&fit=crop" alt="Team Celebration">
-                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop" alt="Football Turf">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop" alt="Cricket Ground">
+                        <img src="images/eveTurfPic.jpeg" alt="Football Turf">
+                        <img src="images/playersFootballPlay.jpeg" alt="Cricket Ground">
+                        <img src="images/studentAcademy.jpeg" alt="Indoor Facility">
+                        <img src="images/turfUnderNightLight.jpeg" alt="Sports Equipment">
+                        <img src="images/cricket.jpeg" alt="Team Celebration">
+                        <img src="images/turfUnderNightLight.jpeg" alt="Football Turf">
+                        <img src="images/pickleBallWithRacketInHand.jpeg" alt="Cricket Ground">
                     </div>
                 </div>
             </div>
@@ -234,20 +282,25 @@
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <span>+91 98765 43210</span>
+                        <span>+91 7906082836</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@turfpro.com</span>
+                        <span>dribbleklub@gmail.com</span>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item"  onclick="openGoogleMaps()" style="cursor: pointer;" title="Click to view on Google Maps">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Sports Complex, City Center</span>
+                        <p>Beside Hill View Arcade Raipur, Aamwala,</br> Dehradun Uttarakhand 248001</p> 
+                    </div>
+                     <div class="info-item"  >
+                        <i class="fab fa-whatsapp" onclick="openContactWhatsApp()" style="cursor: pointer;" title="Click to redirect to whatsapp"></i>
+                        <p>Whatsapp</p> 
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+     </div>
+ </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -255,7 +308,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <img src="attached_assets/logo_1750142238929.png" alt="DRIBBLE Logo">
+                        <img src="images/dribbleKlub_logo.jpeg" alt="DRIBBLE Logo">
                     </div>
                     <p>Premium sports turf booking platform for competitive teams.</p>
                 </div>
@@ -271,18 +324,18 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                        <a href="https://www.instagram.com/dribble.klub?igsh=ZjNibm1sMzcxNzZk"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 TurfPro. All rights reserved.</p>
+                <p>&copy; 2025 DribbleKlub. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
+    <!-- <script type="module" src="script.js"></script> -->
 </body>
 </html>
