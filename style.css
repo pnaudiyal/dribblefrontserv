@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #00ff88;
+    --primary-color: #ffff00;
     --secondary-color: #ff6b35;
     --background-dark: #0a0a0a;
     --background-darker: #000000;
@@ -14,7 +14,7 @@
     --text-gray: #b0b0b0;
     --card-background: #1a1a1a;
     --border-color: #333333;
-    --gradient-primary: linear-gradient(135deg, #00ff88, #00cc6a);
+    --gradient-primary: linear-gradient(135deg, #ffff00, #ffdd00);
     --gradient-secondary: linear-gradient(135deg, #ff6b35, #ff4500);
 }
 
