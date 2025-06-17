@@ -19,11 +19,10 @@
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#register" class="nav-link">Register Team</a></li>
-                    <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                    <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
                     <li><a href="#pricing" class="nav-link">Pricing</a></li>
                     <li><a href="#gallery" class="nav-link">Gallery</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="admin.html" class="nav-link">Admin</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -126,13 +125,57 @@
                             <span class="points">2450</span>
                         </div>
                     </div>
-                    <button class="btn-secondary" onclick="window.location.href='leaderboard.html'">View Full Rankings</button>
+                    <button class="btn-secondary" onclick="window.location.href='#leaderboard'">View Full Rankings</button>
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Full Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Team Rankings & Statistics</h2>
+                <p>Search for your team and view detailed statistics</p>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="teamSearch" placeholder="Search for your team...">
+                <button class="btn-primary" onclick="searchTeam()"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="stats-container">
+                <div class="team-stats">
+                    <h3>Team Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4>Thunder Bolts</h4>
+                            <div class="stat-item">
+                                <span class="stat-label">Games Played:</span>
+                                <span class="stat-value">28</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Wins:</span>
+                                <span class="stat-value">24</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Losses:</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win Rate:</span>
+                                <span class="stat-value">85.7%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Points:</span>
+                                <span class="stat-value">2850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
