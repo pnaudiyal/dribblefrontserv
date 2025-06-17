@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - DRIBBLE</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="attached_assets/logo_1750142238929.png" alt="DRIBBLE Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#register" class="nav-link">Register Team</a></li>
+                    <li><a href="leaderboard.html" class="nav-link active">Leaderboard</a></li>
+                    <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Team Rankings & Statistics</h2>
+                <p>Search for your team and view detailed statistics</p>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="teamSearch" placeholder="Search for your team...">
+                <button class="btn-primary" onclick="searchTeam()"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Full Leaderboard -->
+            <div class="leaderboard-full">
+                <h3>Complete Rankings</h3>
+                <div class="leaderboard-table">
+                    <div class="table-header">
+                        <span>Rank</span>
+                        <span>Team Name</span>
+                        <span>Games</span>
+                        <span>Wins</span>
+                        <span>Losses</span>
+                        <span>Win Rate</span>
+                        <span>Points</span>
+                    </div>
+                    <div class="table-row">
+                        <span>1</span>
+                        <span>Thunder Bolts</span>
+                        <span>28</span>
+                        <span>24</span>
+                        <span>4</span>
+                        <span>85.7%</span>
+                        <span>2850</span>
+                    </div>
+                    <div class="table-row">
+                        <span>2</span>
+                        <span>Fire Eagles</span>
+                        <span>25</span>
+                        <span>20</span>
+                        <span>5</span>
+                        <span>80.0%</span>
+                        <span>2720</span>
+                    </div>
+                    <div class="table-row">
+                        <span>3</span>
+                        <span>Storm Riders</span>
+                        <span>23</span>
+                        <span>18</span>
+                        <span>5</span>
+                        <span>78.3%</span>
+                        <span>2650</span>
+                    </div>
+                    <div class="table-row">
+                        <span>4</span>
+                        <span>Royal Warriors</span>
+                        <span>26</span>
+                        <span>17</span>
+                        <span>9</span>
+                        <span>65.4%</span>
+                        <span>2580</span>
+                    </div>
+                    <div class="table-row">
+                        <span>5</span>
+                        <span>Speed Demons</span>
+                        <span>22</span>
+                        <span>15</span>
+                        <span>7</span>
+                        <span>68.2%</span>
+                        <span>2450</span>
+                    </div>
+                    <div class="table-row">
+                        <span>6</span>
+                        <span>Lightning Strikes</span>
+                        <span>20</span>
+                        <span>13</span>
+                        <span>7</span>
+                        <span>65.0%</span>
+                        <span>2350</span>
+                    </div>
+                    <div class="table-row">
+                        <span>7</span>
+                        <span>Mighty Tigers</span>
+                        <span>21</span>
+                        <span>12</span>
+                        <span>9</span>
+                        <span>57.1%</span>
+                        <span>2280</span>
+                    </div>
+                    <div class="table-row">
+                        <span>8</span>
+                        <span>Phoenix Rising</span>
+                        <span>19</span>
+                        <span>11</span>
+                        <span>8</span>
+                        <span>57.9%</span>
+                        <span>2150</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="team-stats">
+                    <h3>Team Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4>Thunder Bolts</h4>
+                            <div class="stat-item">
+                                <span class="stat-label">Games Played:</span>
+                                <span class="stat-value">28</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Wins:</span>
+                                <span class="stat-value">24</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Losses:</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win Rate:</span>
+                                <span class="stat-value">85.7%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Points:</span>
+                                <span class="stat-value">2850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="attached_assets/logo_1750142238929.png" alt="DRIBBLE Logo">
+                    </div>
+                    <p>Premium sports turf booking platform for competitive teams.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#register">Register</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DRIBBLE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
