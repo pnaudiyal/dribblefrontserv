@@ -8,18 +8,18 @@
 }
 
 :root {
-    --primary-color: #ffff00;
+    --primary-color: #F6D75E;
     --secondary-color: #ff6b35;
-    --accent-color: #ffff00;
+    --accent-color: #F6D75E;
     --background-dark: #0a0a0a;
     --background-darker: #000000;
     --text-light: #ffffff;
     --text-gray: #b0b0b0;
     --card-background: #1a1a1a;
     --border-color: #333333;
-    --gradient-primary: linear-gradient(135deg, #ffff00, #d4f46b);
+    --gradient-primary: linear-gradient(135deg, #F6D75E, #F6D75E);
     --gradient-secondary: linear-gradient(135deg, #ff6b35, #ff4500);
-    --gradient-accent: linear-gradient(135deg, #ffff00, #ffed4e);
+    --gradient-accent: linear-gradient(135deg, #F6D75E, #F6D75E);
 }
 
 body {
@@ -1262,6 +1262,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  border: 0;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
